@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <meta name="author" content="NerdStarOriginal">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+        <title>BangStore&reg;</title>
+
+        <link rel="shortcut icon" href="assets/images/logos/logo-gradient.png" />
+
+        <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css" />
+
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+        <link rel="stylesheet" type="text/css" href="assets/edit-panel/style.css" />
+
+    </head>
+
+    <body class="social-linking">
+
+        <div id="preloader">
+            <img src="assets/images/logos/logo-white.png" alt="">
+        </div>
+
+        <input type="checkbox" id="edit-panel">
+        <div class="edit-panel">
+            <label for="edit-panel">
+                <div class="icon"><i class="fa fa-cog" aria-hidden="true"></i></div>
+            </label>
+            <div class="panel">
+                <div class="content">
+
+                    <div class="title">Monte o site e deixe com a sua cara</div>
+                    <div class="resume">Veja todas as opições de edição e monte o site da maneira que mais agrada você</div>
+
+                    <div id="_background-color" class="color-container">
+                        <div class="mini-title">Selecione a cor de fundo</div>
+                        <div class="color-grid-1">
+                            <div class="container">
+                                <div class="mini-subtitle">Cor</div>
+                                <div class="color">
+                                    <input type="color" id="social-linking-background-color" value="#050505">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="_background-opacity" class="range-container">
+                        <div class="mini-title"> Escolha o nível de opacidade </div>
+                        <div class="range-grid-1">
+                            <div class="container">
+                                <div class="mini-subtitle">nível de opacidade</div>
+                                <div class="content">
+                                    <div class="range"><input id="social-linking-background-opacity" type="range" value="90" min="0" max="100"></div>
+                                    <div class="range-result"><span id="social-linking-background-opacity-result">90</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="_fonts" class="mr-tp-20">
+                        <div class="mini-title"> Escolha um tipo de fonte para o site </div>
+                        <div class="nav nav-pills mr-tp-10">
+                            <div class="nav-link active" data-toggle="pill"> 
+                                <div class="font-container" onclick="FontStyleOne()">
+                                    <div class="font-content">
+                                        <div class="letter" style="font-family: 'Bangers', cursive;"> AB </div>
+                                    </div> 
+                                </div> 
+                                <div class="mini-subtitle">Bangers</div>
+                            </div> 
+                            <div class="nav-link" data-toggle="pill"> 
+                                <div class="font-container" onclick="FontStyleTwo()">
+                                    <div class="font-content">
+                                        <div class="letter" style="font-family: 'DynaPuff', cursive;"> AB </div>
+                                    </div> 
+                                </div> 
+                                <div class="mini-subtitle">DynaPuff</div>
+                            </div>
+                            <div class="nav-link" data-toggle="pill"> 
+                                <div class="font-container" onclick="FontStyleThree()">
+                                    <div class="font-content">
+                                        <div class="letter" style="font-family: 'Alkalami', serif; margin-top: 22px;"> AB </div>
+                                    </div> 
+                                </div> 
+                                <div class="mini-subtitle">Alkalami</div>
+                            </div>
+                            <div class="nav-link" data-toggle="pill"> 
+                                <div class="font-container" onclick="FontStyleFour()">
+                                    <div class="font-content">
+                                        <div class="letter" style="font-family: 'Righteous', cursive;"> AB </div>
+                                    </div> 
+                                </div> 
+                                <div class="mini-subtitle">Righteous</div>
+                            </div> 
+                            <div class="nav-link" data-toggle="pill"> 
+                                <div class="font-container" onclick="FontStyleFive()">
+                                    <div class="font-content">
+                                        <div class="letter" style="font-family: 'Creepster', cursive;"> AB </div>
+                                    </div> 
+                                </div> 
+                                <div class="mini-subtitle">Creepster</div>
+                            </div>
+                            <div class="nav-link" data-toggle="pill"> 
+                                <div class="font-container" onclick="FontStyleSex()">
+                                    <div class="font-content">
+                                        <div class="letter" style="font-family: 'Anton', sans-serif;"> AB </div>
+                                    </div> 
+                                </div> 
+                                <div class="mini-subtitle">Anton</div>
+                            </div>
+                            <div class="nav-link" data-toggle="pill"> 
+                                <div class="font-container" onclick="FontStyleSeven()">
+                                    <div class="font-content">
+                                        <div class="letter" style="font-family: 'Special Elite', cursive; margin-top: 13px;"> AB </div>
+                                    </div> 
+                                </div> 
+                                <div class="mini-subtitle">Special</div>
+                            </div> 
+                            <div class="nav-link" data-toggle="pill"> 
+                                <div class="font-container" onclick="FontStyleEight()">
+                                    <div class="font-content">
+                                        <div class="letter" style="font-family: 'Fredoka', sans-serif;"> AB </div>
+                                    </div> 
+                                </div> 
+                                <div class="mini-subtitle">Fredoka</div>
+                            </div>
+                            <div class="nav-link center" data-toggle="pill"> 
+                                <div class="font-container" onclick="FontStyleNine()">
+                                    <div class="font-content">
+                                        <div class="letter" style="font-family: 'Roboto', sans-serif;"> AB </div>
+                                    </div> 
+                                </div> 
+                                <div class="mini-subtitle">Roboto</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="_profile-picture" class="color-container">
+                        <div class="mini-title">Selecione as cores da logo de perfil</div>
+                        <div class="color-grid-1">
+                            <div class="container">
+                                <div class="mini-subtitle">Primeira cor</div>
+                                <div class="color">
+                                    <input type="color" id="social-linking-profile-picture-color-one" value="#BF6E0B">
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="mini-subtitle">Segunda cor</div>
+                                <div class="color">
+                                    <input type="color" id="social-linking-profile-picture-color-two" value="#F2CF66">
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="mini-subtitle">Terceira cor</div>
+                                <div class="color">
+                                    <input type="color" id="social-linking-profile-picture-color-three" value="#0E0E0E">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="_text-color" class="color-container">
+                        <div class="mini-title">Selecione as cores dos textos</div>
+                        <div class="color-grid-2">
+                            <div class="container">
+                                <div class="mini-subtitle">Cor primária</div>
+                                <div class="color">
+                                    <input type="color" id="social-linking-text-color-one" value="#FFFFFF">
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="mini-subtitle">Cor secundária</div>
+                                <div class="color">
+                                    <input type="color" id="social-linking-text-color-two" value="#050505">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="_hover-color" class="color-container">
+                        <div class="mini-title">Selecione a cor de quando o mouse passa por cima</div>
+                        <div class="color-grid-1">
+                            <div class="container">
+                                <div class="mini-subtitle">Cor</div>
+                                <div class="color">
+                                    <input type="color" id="social-linking-hover-color" value="#666666">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="_border-radius" class="range-container">
+                        <div class="mini-title"> Escolha o formato dos botões </div>
+                        <div class="range-grid-1">
+                            <div class="container mr-tp-10">
+                                <div class="mini-subtitle">canto superior esquerdo</div>
+                                <div class="content">
+                                    <div class="range"><input id="social-linking-button-border-radius-top-left" type="range" value="0" min="0" max="50"></div>
+                                    <div class="range-result"><span id="social-linking-button-border-radius-top-left-result">0</span></div>
+                                </div>
+                            </div>
+                            <div class="container mr-tp-25">
+                                <div class="mini-subtitle">canto superior direito</div>
+                                <div class="content">
+                                    <div class="range"><input id="social-linking-button-border-radius-top-right" type="range" value="0" min="0" max="50"></div>
+                                    <div class="range-result"><span id="social-linking-button-border-radius-top-right-result">0</span></div>
+                                </div>
+                            </div>
+                            <div class="container mr-tp-25">
+                                <div class="mini-subtitle">canto inferior direito</div>
+                                <div class="content">
+                                    <div class="range"><input id="social-linking-button-border-radius-bottom-right" type="range" value="0" min="0" max="50"></div>
+                                    <div class="range-result"><span id="social-linking-button-border-radius-bottom-right-result">0</span></div>
+                                </div>
+                            </div>
+                            <div class="container mr-tp-25">
+                                <div class="mini-subtitle">canto inferior esquerdo</div>
+                                <div class="content">
+                                    <div class="range"><input id="social-linking-button-border-radius-bottom-left" type="range" value="0" min="0" max="50"></div>
+                                    <div class="range-result"><span id="social-linking-button-border-radius-bottom-left-result">0</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="_buttons-color" class="color-container">
+                        <div class="mini-title">Selecione as cores dos botões</div>
+                        <div class="color-grid-1">
+                            <div class="container">
+                                <div class="mini-subtitle">Primeira cor</div>
+                                <div class="color">
+                                    <input type="color" id="social-linking-button-color-one" value="#BF6E0B">
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="mini-subtitle">Segunda cor</div>
+                                <div class="color">
+                                    <input type="color" id="social-linking-button-color-two" value="#F2CF66">
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="mini-subtitle">Terceira cor</div>
+                                <div class="color">
+                                    <input type="color" id="social-linking-button-color-three" value="#050505">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="_background" class="image-container" style="margin-top: -20px;">
+                        <div class="mini-title"> Escolha uma imagem de background </div>
+                        <div class="container">
+                            <div class="background-panel" id="background-photo"><img src="background.jpg" alt=""></div>
+                        </div>
+                        <div class="image-grid">
+                            <div class="button">
+                                <div onclick="Background()" class="add" id="add-background">
+                                    <div class="fill"><div class="text">Adicionar</div></div>
+                                    <input type="file" id="background" hidden> 
+                                </div>
+                            </div>
+                            <div class="button">
+                                <div class="remove" id="remove-background">
+                                    <div class="fill"><div class="text">Remover</div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="background">
+            <img src="background.jpg" alt="">
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <div class="profile-picture">
+                <img src="assets/images/logos/profile.png" alt="">
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <div class="title-container">
+                <div class="text">Bang Store</div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <div class="resume-container">
+                <div class="text">Saiba mais sobre nós e sobre nossos produtos nos seguindo nas nossas redes sócias</div>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <a href="#">
+                <div class="button"><div class="fill"><div class="text">Site</div></div></div>
+                <div class="shadow"><div class="fill"></div></div>
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="#">
+                <div class="button"><div class="fill"><div class="text">Camisetas</div></div></div>
+                <div class="shadow"><div class="fill"></div></div>
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="#">
+                <div class="button"><div class="fill"><div class="text">Bermudas</div></div></div>
+                <div class="shadow"><div class="fill"></div></div>
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="#">
+                <div class="button"><div class="fill"><div class="text">Acessórios</div></div></div>
+                <div class="shadow"><div class="fill"></div></div>
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="#">
+                <div class="button"><div class="fill"><div class="text">Blusas</div></div></div>
+                <div class="shadow"><div class="fill"></div></div>
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="#">
+                <div class="button"><div class="fill"><div class="text">kits</div></div></div>
+                <div class="shadow"><div class="fill"></div></div>
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="#">
+                <div class="button"><div class="fill"><div class="text">Perfil na Shopee</div></div></div>
+                <div class="shadow"><div class="fill"></div></div>
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="#">
+                <div class="button"><div class="fill"><div class="text">Perfil na Amazon</div></div></div>
+                <div class="shadow"><div class="fill"></div></div>
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="#">
+                <div class="button"><div class="fill"><div class="text">Perfil no mercado livre</div></div></div>
+                <div class="shadow"><div class="fill"></div></div>
+            </a>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <div class="icons-container">
+                <div class="content">
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+                <div class="content">
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </div>
+                <div class="content">
+                    <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                </div>
+                <div class="content">
+                    <a href="#"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
+                </div>
+                <div class="content">
+                    <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                </div>
+                <div class="content">
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="end mr-tp-15">
+            <div class="bar"></div>
+            <div class="company">
+                <div class="intro">&copy; 2022 BANGSTORE. Todos direitos reservados.</div>
+                <a href="#" target="_blank">BANGSTORE&reg;</a>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="assets/js/preloader.js"></script>
+        
+        <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+        
+        <script type="text/javascript" src="assets/js/popper.min.js"></script>
+
+        <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="assets/edit-panel/social-linking.js"></script>
+
+    </body>
+
+</html>
+

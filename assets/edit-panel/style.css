@@ -1,0 +1,245 @@
+.edit-panel
+{ z-index: 9999; position: fixed; display: flex; align-items: center; transition: .3s; transition-timing-function: linear; font-family: 'Bangers', cursive; }
+
+.edit-panel label
+{ width: 60px; height: 60px; position: absolute; z-index: 2; cursor: pointer; }
+
+#edit-panel { display: none; }
+
+input[id="edit-panel"] { display: none; } 
+
+#edit-panel:checked + .edit-panel 
+{ margin: 0px 0px 0px 0px; transition: .3s; transition-timing-function: linear; }
+
+.edit-panel label .icon
+{ background: #050505; display: flex; justify-content: center; align-items: center; }
+
+.edit-panel label .icon .fa
+{ color: transparent; background: white; background-position: center center; background-size: 100%; -webkit-background-clip: text; font-weight: normal; font-size: 35px; text-align: center; position: relative; padding: 2px; }
+
+.edit-panel .panel
+{ height: 100%; }
+
+.edit-panel .panel .content
+{ width: 100%; height: 100%; background: #050505; overflow-y: auto; padding: 15px 5px; position: relative; }
+
+.edit-panel .panel .content::-webkit-scrollbar
+{ width: 15px; height: 70px; }
+
+.edit-panel .panel .content::-webkit-scrollbar-track
+{ background: #0E0E0E; }
+
+.edit-panel .panel .content::-webkit-scrollbar-thumb
+{ border-radius: 0px; background: linear-gradient(to bottom, #BF6E0B, #F2CF66); transition: 0.8s; transition-timing-function: linear; }
+
+.edit-panel .panel .content::-webkit-scrollbar-thumb:hover
+{ transition: 0.8s; transition-timing-function: linear; background: #FFFFFF; }
+
+.edit-panel .panel .content .title
+{ color: transparent; background: white; background-position: center center; background-size: 100%; -webkit-background-clip: text; font-weight: normal; font-size: 27px; text-align: center; position: relative; padding: 1px 2px; margin: 0px 5px 0px; }
+
+.edit-panel .panel .content .resume
+{ color: transparent; background: white; background-position: center center; background-size: 100%; -webkit-background-clip: text; font-weight: normal; font-size: 16px; text-align: center; position: relative; padding: 1px 2px; margin: 0px 7px 10px; }
+
+.edit-panel .panel .content .mini-title
+{ color: transparent; background: white; background-position: center center; background-size: 100%; -webkit-background-clip: text; font-weight: normal; font-size: 21px; text-align: center; position: relative; padding: 1px 2px; }
+
+.edit-panel .panel .content .mini-subtitle
+{ color: transparent; background: white; background-position: center center; background-size: 100%; -webkit-background-clip: text; font-weight: normal; font-size: 16px; text-align: center; position: relative; padding: 1px 2px; letter-spacing: 1px; }
+
+.edit-panel .panel .content .bar
+{ width: 90%; height: 2px; border-radius: 50px; background: linear-gradient(to right, #BF6E0B 20%, #F2CF66 100%); margin: auto; display: none; }
+
+.edit-panel .panel .content .color-container
+{ width: 100%; height: auto; padding: 18px 0px 11px; }
+
+.edit-panel .panel .content .color-container .color-grid-2,
+.edit-panel .panel .content .color-container .color-grid-1
+{ width: 100%; height: auto; display: grid; margin: -3px 0px 0px; }
+
+.edit-panel .panel .content .color-container .color-grid-2
+{ padding: 0px 0px 0px; }
+
+.edit-panel .panel .content .color-container .color-grid-1
+{ grid-template-columns: 100%; }
+
+.edit-panel .panel .content .color-container .container
+{ width: 100%; height: auto; padding: 5px 15px; }
+
+.edit-panel .panel .content .color-container .container .color
+{ width: 100%; height: auto; display: flex; justify-content: center; }
+
+.edit-panel .panel .content .color-container .container .color input[type="color"]
+{ -webkit-appearance: none; background-color: transparent; width: 100%; height: max-content; cursor: pointer; border: none; background: white; padding: 0px 0px; border-radius: 5px; }
+
+.edit-panel .panel .content .color-container .container .color input[type="color"]::-webkit-color-swatch
+{ border-radius: 3px; border: 0px solid rgb(255, 255, 255); width: 100%; height: 40px; margin: -2px 0px; }
+
+.edit-panel .panel .content .nav-pills
+{ width: 100%; height: auto; display: grid; }
+
+.edit-panel .panel .content .nav-link
+{ width: 100%; height: auto; background: transparent; margin: 0; padding: 0px 12px 12px; }
+
+.edit-panel .panel .content .nav-link .font-container
+{ width: 100%; height: 85px; position: relative; padding: 2px; background: #FFFFFF; border-radius: 4px; cursor: pointer; }
+
+.edit-panel .panel .content .nav-link .font-container .font-content
+{ width: 100%; height: 100%; border-radius: 2px; background: #0E0E0E; display: flex; justify-content: center; align-items: center; overflow: hidden; }
+
+.edit-panel .panel .content .nav-link .font-container .font-content .letter
+{ color: transparent; background: white; background-position: center center; background-size: 100%; -webkit-background-clip: text; font-weight: normal; font-size: 45px; text-align: center; position: relative; padding: 5px; }
+
+.edit-panel .panel .content .nav-link.active .font-container
+{ background: linear-gradient(to right, #BF6E0B, #F2CF66); }
+
+.edit-panel .panel .content .range-container
+{ width: 100%; height: auto; padding: 18px 0px 11px; }
+
+.edit-panel .panel .content .range-container .range-grid-2,
+.edit-panel .panel .content .range-container .range-grid-1
+{ width: 100%; height: auto; display: grid; padding: 0px 0px 0px; }
+
+.edit-panel .panel .content .range-container .range-grid-2
+{ grid-template-columns: 50% 50%; }
+
+.edit-panel .panel .content .range-container .range-grid-1
+{ grid-template-columns: 100%; }
+
+.edit-panel .panel .content .range-container .container
+{ width: 100%; height: auto; }
+
+.edit-panel .panel .content .range-container .container .content 
+{ width: 100%; height: 100%; display: grid; grid-template-columns: auto max-content; padding: 0px 13px 0px; margin: -5px 0px 0px; }
+
+.edit-panel .panel .content .range-container .container .content .range
+{ width: 100%; height: auto; display: flex; justify-content: center; align-items: center; }
+
+.edit-panel .panel .content .range-container .container .content .range input 
+{ width: 100%; height: 8px; -webkit-appearance: none; border-radius: 50px; background: #ffffff; cursor: pointer; }
+
+.edit-panel .panel .content .range-container .container .content .range input:focus 
+{ outline: none; }
+
+.edit-panel .panel .content .range-container .container .content .range input::-webkit-slider-runnable-track 
+{ width: 100%; height: 1px; cursor: pointer; box-shadow: none; border-radius: 0px; border: 0px solid #000000; }
+
+.edit-panel .panel .content .range-container .container .content .range input::-moz-range-track 
+{ width: 100%; height: 1px; cursor: pointer; box-shadow: none; background: #ffffff; border-radius: 0px; border: 0px solid #000000; }
+
+.edit-panel .panel .content .range-container .container .content .range input::-webkit-slider-thumb 
+{ box-shadow: none; border: 0px solid #ffffff; height: 24px; width: 24px; border-radius: 100px; background: rgb(255, 255, 255); cursor: pointer; -webkit-appearance: none; margin-top: -12px; }
+
+.edit-panel .panel .content .range-container .container .content .range input::-moz-focus-outer 
+{ border: 0; }
+
+.edit-panel .panel .content .range-container .container .content .range-result
+{ width: 100%; height: auto; display: flex; justify-content: center; align-items: center; padding: 0px 0px 0px 10px; }
+
+.edit-panel .panel .content .range-container .container .content .range-result span 
+{ position: relative; display: flex; justify-content: center; align-items: center; width: 50px; height: 40px; background: transparent; border-radius: 8px; line-height: 30px; text-align: center; font-weight: bold; box-sizing: border-box; border: 2px solid #fff; color: #fff; font-style: normal; font-weight: normal; line-height: normal; font-size: 20px; }
+
+.edit-panel .panel .content .image-container
+{ width: 100%; height: auto; padding: 30px 0px 8px; }
+
+.edit-panel .panel .content .image-container .container
+{ width: 100%; height: auto; display: flex; justify-content: center; padding: 7px 0px 0px; }
+
+.edit-panel .panel .content .image-container .container .background-panel
+{ width: 90%; height: 150px; padding: 2px; border-radius: 5px; background: linear-gradient(to right, #BF6E0B 20%, #F2CF66 100%); }
+
+.edit-panel .panel .content .image-container .container .background-panel img
+{ width: 100%; height: 100%; border-radius: 3px; object-fit: cover; }
+
+.edit-panel .panel .content .image-container .image-grid
+{ width: 100%; height: auto; display: grid; }
+
+.edit-panel .panel .content .image-container .button
+{ width: 100%; height: auto; }
+
+.edit-panel .panel .content .image-container .button .add
+{ width: 100%; height: auto; padding: 2px; border-radius: 50px; cursor: pointer; background: linear-gradient(to right, #BF6E0B 20%, #F2CF66 100%) }
+
+.edit-panel .panel .content .image-container .button .add .fill
+{ width: 100%; height: auto; border-radius: 50px; padding: 5px 5px; }
+
+.edit-panel .panel .content .image-container .button .add .fill .text
+{ color: transparent; background: #050505; background-position: center center; background-size: 100%; -webkit-background-clip: text; font-weight: normal; font-size: 18px; text-align: center; position: relative; padding: 1px 2px; letter-spacing: 1px; }
+
+.edit-panel .panel .content .image-container .button .remove
+{ width: 100%; height: auto; padding: 2px; border-radius: 50px; cursor: pointer; background: linear-gradient(to right, #BF6E0B 20%, #F2CF66 100%) }
+
+.edit-panel .panel .content .image-container .button .remove .fill
+{ width: 100%; height: auto; background: #050505; border-radius: 50px; padding: 5px 5px; }
+
+.edit-panel .panel .content .image-container .button .remove .fill .text
+{ color: transparent; background: #FFFFFF; background-position: center center; background-size: 100%; -webkit-background-clip: text; font-weight: normal; font-size: 18px; text-align: center; position: relative; padding: 1px 2px; letter-spacing: 1px; }
+
+@media screen and (min-width:0px) and (max-width:549px) 
+{
+    .edit-panel
+    { bottom: 0; right: 0; width: 100%; height: 350px; float: right; justify-content: center; margin: 0px 0px -350px 0px; }
+
+    .edit-panel label
+    { top: 0; background: linear-gradient(to right, #BF6E0B, #F2CF66); margin-top: -60px; padding: 2px 2px 0px 2px; }
+
+    .edit-panel label .icon
+    { width: 100%; height: 100%; }
+
+    .edit-panel .panel
+    { width: 100%; padding: 2px 0px 0px 0px; background: linear-gradient(to right, #BF6E0B, #F2CF66); }
+}
+
+@media screen and (min-width:550px) 
+{
+    .edit-panel
+    { top: 0; right: 0; width: auto; height: 100%; float: right; justify-content: right; margin: 0px -370px 0px 0px; }
+
+    .edit-panel label
+    { left: 0; background: linear-gradient(to bottom, #BF6E0B 10%, #F2CF66 100%); margin-left: -58px; padding: 2px 0px 2px 2px; }
+
+    .edit-panel label .icon
+    { width: 59px; height: 100%; }
+
+    .edit-panel .panel
+    { width: 370px; padding: 0px 2px 0px 2px; background: linear-gradient(to bottom, #BF6E0B 10%, #F2CF66 100%); }
+}
+
+@media screen and (min-width:0px) and (max-width:374px) 
+{
+    .edit-panel .panel .content .color-container .color-grid-2
+    { grid-template-columns: 100%; padding: 0px 10% 0px; }
+
+    .edit-panel .panel .content .color-container .color-grid-1
+    { padding: 0px 10% 0px; }
+
+    .edit-panel .panel .content .nav-pills
+    { grid-template-columns: 50% 50%; }
+
+    .edit-panel .panel .content .nav-pills .center
+    { transform: translateX(50%); }
+
+    .edit-panel .panel .content .image-container .image-grid
+    { grid-template-columns: 100%; padding: 15px 10% 0px; }
+
+    .edit-panel .panel .content .image-container .button
+    { padding: 0px 10px 10px; }
+}
+
+@media screen and (min-width:375px) 
+{
+    .edit-panel .panel .content .color-container .color-grid-2
+    { grid-template-columns: 50% 50%; }
+
+    .edit-panel .panel .content .color-container .color-grid-1
+    { padding: 0px 15% 0px; }
+
+    .edit-panel .panel .content .nav-pills
+    { grid-template-columns: 33.33% 33.34% 33.33%; }
+
+    .edit-panel .panel .content .image-container .image-grid
+    { grid-template-columns: 50% 50%; padding: 15px 0px 0px; }
+
+    .edit-panel .panel .content .image-container .button
+    { padding: 0px 10px; }
+}

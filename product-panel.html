@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <meta name="author" content="NerdStarOriginal">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+        <title>BangStore&reg;</title>
+
+        <link rel="shortcut icon" href="assets/images/logos/logo-gradient.png" />
+
+        <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css" />
+
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+        <link rel="stylesheet" type="text/css" href="assets/edit-panel/style.css" />
+
+    </head>
+
+    <body>
+
+        <div id="preloader">
+            <img src="assets/images/logos/logo-white.png" alt="">
+        </div>
+
+        <input type="checkbox" id="edit-panel">
+        <div class="edit-panel">
+            <label for="edit-panel">
+                <div class="icon"><i class="fa fa-cog" aria-hidden="true"></i></div>
+            </label>
+            <div class="panel">
+                <div class="content">
+
+                    <div class="title">Monte o site e deixe com a sua cara</div>
+                    <div class="resume">Veja todas as opições de edição e monte o site da maneira que mais agrada você</div>
+
+                    <div id="_gradient-color" class="color-container">
+                        <div class="mini-title">Selecione as cores do degrade</div>
+                        <div class="color-grid-2">
+                            <div class="container">
+                                <div class="mini-subtitle">Cor primária</div>
+                                <div class="color"><input type="color" id="gradient-primary-color" value="#BF6E0B"></div>
+                            </div>
+                            <div class="container">
+                                <div class="mini-subtitle">Cor secundária</div>
+                                <div class="color"><input type="color" id="gradient-secondary-color" value="#F2CF66"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="_main-color" class="color-container">
+                        <div class="mini-title">Selecione as cores principais</div>
+                        <div class="color-grid-2">
+                            <div class="container">
+                                <div class="mini-subtitle">Cor primária</div>
+                                <div class="color"><input type="color" id="primary-color" value="#050505"></div>
+                            </div>
+                            <div class="container">
+                                <div class="mini-subtitle">Cor secundária</div>
+                                <div class="color"><input type="color" id="secondary-color" value="#0E0E0E"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="_fonts" class="mr-tp-20">
+                        <div class="mini-title"> Escolha um tipo de fonte para o site </div>
+                        <div class="nav nav-pills mr-tp-10">
+                            <div class="nav-link active" data-toggle="pill"> 
+                                <div class="font-container" onclick="FontStyleOne()">
+                                    <div class="font-content">
+                                        <div class="letter" style="font-family: 'Bangers', cursive;"> AB </div>
+                                    </div> 
+                                </div> 
+                                <div class="mini-subtitle">Bangers</div>
+                            </div> 
+                            <div class="nav-link" data-toggle="pill"> 
+                                <div class="font-container" onclick="FontStyleTwo()">
+                                    <div class="font-content">
+                                        <div class="letter" style="font-family: 'DynaPuff', cursive;"> AB </div>
+                                    </div> 
+                                </div> 
+                                <div class="mini-subtitle">DynaPuff</div>
+                            </div>
+                            <div class="nav-link" data-toggle="pill"> 
+                                <div class="font-container" onclick="FontStyleThree()">
+                                    <div class="font-content">
+                                        <div class="letter" style="font-family: 'Alkalami', serif; margin-top: 22px;"> AB </div>
+                                    </div> 
+                                </div> 
+                                <div class="mini-subtitle">Alkalami</div>
+                            </div>
+                            <div class="nav-link" data-toggle="pill"> 
+                                <div class="font-container" onclick="FontStyleFour()">
+                                    <div class="font-content">
+                                        <div class="letter" style="font-family: 'Righteous', cursive;"> AB </div>
+                                    </div> 
+                                </div> 
+                                <div class="mini-subtitle">Righteous</div>
+                            </div> 
+                            <div class="nav-link" data-toggle="pill"> 
+                                <div class="font-container" onclick="FontStyleFive()">
+                                    <div class="font-content">
+                                        <div class="letter" style="font-family: 'Creepster', cursive;"> AB </div>
+                                    </div> 
+                                </div> 
+                                <div class="mini-subtitle">Creepster</div>
+                            </div>
+                            <div class="nav-link" data-toggle="pill"> 
+                                <div class="font-container" onclick="FontStyleSex()">
+                                    <div class="font-content">
+                                        <div class="letter" style="font-family: 'Anton', sans-serif;"> AB </div>
+                                    </div> 
+                                </div> 
+                                <div class="mini-subtitle">Anton</div>
+                            </div>
+                            <div class="nav-link" data-toggle="pill"> 
+                                <div class="font-container" onclick="FontStyleSeven()">
+                                    <div class="font-content">
+                                        <div class="letter" style="font-family: 'Special Elite', cursive; margin-top: 13px;"> AB </div>
+                                    </div> 
+                                </div> 
+                                <div class="mini-subtitle">Special</div>
+                            </div> 
+                            <div class="nav-link" data-toggle="pill"> 
+                                <div class="font-container" onclick="FontStyleEight()">
+                                    <div class="font-content">
+                                        <div class="letter" style="font-family: 'Fredoka', sans-serif;"> AB </div>
+                                    </div> 
+                                </div> 
+                                <div class="mini-subtitle">Fredoka</div>
+                            </div>
+                            <div class="nav-link center" data-toggle="pill"> 
+                                <div class="font-container" onclick="FontStyleNine()">
+                                    <div class="font-content">
+                                        <div class="letter" style="font-family: 'Roboto', sans-serif;"> AB </div>
+                                    </div> 
+                                </div> 
+                                <div class="mini-subtitle">Roboto</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="_image-border-radius" class="range-container">
+                        <div class="mini-title"> Escolha o formato da imagem principal </div>
+                        <div class="range-grid-1">
+                            <div class="container mr-tp-10">
+                                <div class="mini-subtitle">canto superior esquerdo</div>
+                                <div class="content">
+                                    <div class="range"><input id="product-panel-image-container-border-radius-top-left" type="range" value="5" min="0" max="100"></div>
+                                    <div class="range-result"><span id="product-panel-image-container-border-radius-top-left-result">5</span></div>
+                                </div>
+                            </div>
+                            <div class="container mr-tp-25">
+                                <div class="mini-subtitle">canto superior direito</div>
+                                <div class="content">
+                                    <div class="range"><input id="product-panel-image-container-border-radius-top-right" type="range" value="5" min="0" max="100"></div>
+                                    <div class="range-result"><span id="product-panel-image-container-border-radius-top-right-result">5</span></div>
+                                </div>
+                            </div>
+                            <div class="container mr-tp-25">
+                                <div class="mini-subtitle">canto inferior direito</div>
+                                <div class="content">
+                                    <div class="range"><input id="product-panel-image-container-border-radius-bottom-right" type="range" value="5" min="0" max="100"></div>
+                                    <div class="range-result"><span id="product-panel-image-container-border-radius-bottom-right-result">5</span></div>
+                                </div>
+                            </div>
+                            <div class="container mr-tp-25">
+                                <div class="mini-subtitle">canto inferior esquerdo</div>
+                                <div class="content">
+                                    <div class="range"><input id="product-panel-image-container-border-radius-bottom-left" type="range" value="5" min="0" max="100"></div>
+                                    <div class="range-result"><span id="product-panel-image-container-border-radius-bottom-left-result">5</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="_gallery-border-radius" class="range-container">
+                        <div class="mini-title"> Escolha o formato das images da galeria </div>
+                        <div class="range-grid-1">
+                            <div class="container mr-tp-10">
+                                <div class="mini-subtitle">canto superior esquerdo</div>
+                                <div class="content">
+                                    <div class="range"><input id="product-panel-gallery-container-border-radius-top-left" type="range" value="4" min="0" max="100"></div>
+                                    <div class="range-result"><span id="product-panel-gallery-container-border-radius-top-left-result">4</span></div>
+                                </div>
+                            </div>
+                            <div class="container mr-tp-25">
+                                <div class="mini-subtitle">canto superior direito</div>
+                                <div class="content">
+                                    <div class="range"><input id="product-panel-gallery-container-border-radius-top-right" type="range" value="4" min="0" max="100"></div>
+                                    <div class="range-result"><span id="product-panel-gallery-container-border-radius-top-right-result">4</span></div>
+                                </div>
+                            </div>
+                            <div class="container mr-tp-25">
+                                <div class="mini-subtitle">canto inferior direito</div>
+                                <div class="content">
+                                    <div class="range"><input id="product-panel-gallery-container-border-radius-bottom-right" type="range" value="4" min="0" max="100"></div>
+                                    <div class="range-result"><span id="product-panel-gallery-container-border-radius-bottom-right-result">4</span></div>
+                                </div>
+                            </div>
+                            <div class="container mr-tp-25">
+                                <div class="mini-subtitle">canto inferior esquerdo</div>
+                                <div class="content">
+                                    <div class="range"><input id="product-panel-gallery-container-border-radius-bottom-left" type="range" value="4" min="0" max="100"></div>
+                                    <div class="range-result"><span id="product-panel-gallery-container-border-radius-bottom-left-result">4</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="_informations-container-border-radius" class="range-container">
+                        <div class="mini-title"> Escolha o formato do painel de informações </div>
+                        <div class="range-grid-1">
+                            <div class="container mr-tp-10">
+                                <div class="mini-subtitle">canto superior esquerdo</div>
+                                <div class="content">
+                                    <div class="range"><input id="product-panel-informations-container-border-radius-top-left" type="range" value="4" min="0" max="100"></div>
+                                    <div class="range-result"><span id="product-panel-informations-container-border-radius-top-left-result">4</span></div>
+                                </div>
+                            </div>
+                            <div class="container mr-tp-25">
+                                <div class="mini-subtitle">canto superior direito</div>
+                                <div class="content">
+                                    <div class="range"><input id="product-panel-informations-container-border-radius-top-right" type="range" value="4" min="0" max="100"></div>
+                                    <div class="range-result"><span id="product-panel-informations-container-border-radius-top-right-result">4</span></div>
+                                </div>
+                            </div>
+                            <div class="container mr-tp-25">
+                                <div class="mini-subtitle">canto inferior direito</div>
+                                <div class="content">
+                                    <div class="range"><input id="product-panel-informations-container-border-radius-bottom-right" type="range" value="4" min="0" max="100"></div>
+                                    <div class="range-result"><span id="product-panel-informations-container-border-radius-bottom-right-result">4</span></div>
+                                </div>
+                            </div>
+                            <div class="container mr-tp-25">
+                                <div class="mini-subtitle">canto inferior esquerdo</div>
+                                <div class="content">
+                                    <div class="range"><input id="product-panel-informations-container-border-radius-bottom-left" type="range" value="4" min="0" max="100"></div>
+                                    <div class="range-result"><span id="product-panel-informations-container-border-radius-bottom-left-result">4</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="_informations-content-border-radius" class="range-container">
+                        <div class="mini-title"> Escolha o formato das informações </div>
+                        <div class="range-grid-1">
+                            <div class="container mr-tp-10">
+                                <div class="mini-subtitle">canto superior esquerdo</div>
+                                <div class="content">
+                                    <div class="range"><input id="product-panel-informations-content-border-radius-top-left" type="range" value="0" min="0" max="50"></div>
+                                    <div class="range-result"><span id="product-panel-informations-content-border-radius-top-left-result">0</span></div>
+                                </div>
+                            </div>
+                            <div class="container mr-tp-25">
+                                <div class="mini-subtitle">canto superior direito</div>
+                                <div class="content">
+                                    <div class="range"><input id="product-panel-informations-content-border-radius-top-right" type="range" value="0" min="0" max="50"></div>
+                                    <div class="range-result"><span id="product-panel-informations-content-border-radius-top-right-result">0</span></div>
+                                </div>
+                            </div>
+                            <div class="container mr-tp-25">
+                                <div class="mini-subtitle">canto inferior direito</div>
+                                <div class="content">
+                                    <div class="range"><input id="product-panel-informations-content-border-radius-bottom-right" type="range" value="0" min="0" max="50"></div>
+                                    <div class="range-result"><span id="product-panel-informations-content-border-radius-bottom-right-result">0</span></div>
+                                </div>
+                            </div>
+                            <div class="container mr-tp-25">
+                                <div class="mini-subtitle">canto inferior esquerdo</div>
+                                <div class="content">
+                                    <div class="range"><input id="product-panel-informations-content-border-radius-bottom-left" type="range" value="0" min="0" max="50"></div>
+                                    <div class="range-result"><span id="product-panel-informations-content-border-radius-bottom-left-result">0</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="_text-color" class="color-container">
+                        <div class="mini-title">Selecione as cores dos textos</div>
+                        <div class="color-grid-2">
+                            <div class="container">
+                                <div class="mini-subtitle">Primeira cor</div>
+                                <div class="color"><input type="color" id="text-color-one" value="#050505"></div>
+                            </div>
+                            <div class="container">
+                                <div class="mini-subtitle">Segunda cor</div>
+                                <div class="color"><input type="color" id="text-color-two" value="#FFFFFF"></div>
+                            </div>
+                            <div class="container">
+                                <div class="mini-subtitle">Terceira cor</div>
+                                <div class="color"><input type="color" id="text-color-three" value="#BF6E0B"></div>
+                            </div>
+                            <div class="container">
+                                <div class="mini-subtitle">Quarta cor</div>
+                                <div class="color"><input type="color" id="text-color-four" value="#F2CF66"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="_hover-color" class="color-container">
+                        <div class="mini-title">Selecione a cor de quando o mouse passa por cima</div>
+                        <div class="color-grid-1">
+                            <div class="container">
+                                <div class="mini-subtitle">Cor</div>
+                                <div class="color"><input type="color" id="hover-color" value="#666666"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="_card-image-border-radius" class="range-container">
+                        <div class="mini-title"> Escolha o formato das imagems dos cards </div>
+                        <div class="range-grid-1">
+                            <div class="container mr-tp-10">
+                                <div class="mini-subtitle">canto superior esquerdo</div>
+                                <div class="content">
+                                    <div class="range"><input id="card-image-border-top-left" type="range" value="0" min="0" max="100"></div>
+                                    <div class="range-result"><span id="card-image-border-top-left-result">0</span></div>
+                                </div>
+                            </div>
+                            <div class="container mr-tp-25">
+                                <div class="mini-subtitle">canto superior direito</div>
+                                <div class="content">
+                                    <div class="range"><input id="card-image-border-top-right" type="range" value="0" min="0" max="100"></div>
+                                    <div class="range-result"><span id="card-image-border-top-right-result">0</span></div>
+                                </div>
+                            </div>
+                            <div class="container mr-tp-25">
+                                <div class="mini-subtitle">canto inferior direito</div>
+                                <div class="content">
+                                    <div class="range"><input id="card-image-border-bottom-right" type="range" value="5" min="0" max="100"></div>
+                                    <div class="range-result"><span id="card-image-border-bottom-right-result">5</span></div>
+                                </div>
+                            </div>
+                            <div class="container mr-tp-25">
+                                <div class="mini-subtitle">canto inferior esquerdo</div>
+                                <div class="content">
+                                    <div class="range"><input id="card-image-border-bottom-left" type="range" value="5" min="0" max="100"></div>
+                                    <div class="range-result"><span id="card-image-border-bottom-left-result">5</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="_card-text-color" class="color-container">
+                        <div class="mini-title">Selecione as cores dos textos no card</div>
+                        <div class="color-grid-2">
+                            <div class="container">
+                                <div class="mini-subtitle">Cor primária</div>
+                                <div class="color"><input type="color" id="card-text-color-one" value="#BF6E0B"></div>
+                            </div>
+                            <div class="container">
+                                <div class="mini-subtitle">Cor secundária</div>
+                                <div class="color"><input type="color" id="card-text-color-two" value="#F2CF66"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="_card-border-radius" class="range-container">
+                        <div class="mini-title"> Escolha o formato do card </div>
+                        <div class="range-grid-1">
+                            <div class="container mr-tp-10">
+                                <div class="mini-subtitle">borda esquerda</div>
+                                <div class="content">
+                                    <div class="range"><input id="card-border-left" type="range" value="10" min="0" max="100"></div>
+                                    <div class="range-result"><span id="card-border-left-result">10</span></div>
+                                </div>
+                            </div>
+                            <div class="container mr-tp-25">
+                                <div class="mini-subtitle">borda direita</div>
+                                <div class="content">
+                                    <div class="range"><input id="card-border-right" type="range" value="10" min="0" max="100"></div>
+                                    <div class="range-result"><span id="card-border-right-result">10</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="_logo-color" class="color-container">
+                        <div class="mini-title">Selecione a cor da logo</div>
+                        <div class="color-grid-1">
+                            <div class="container">
+                                <div class="mini-subtitle">Cor</div>
+                                <div class="color"><input type="color" id="logo-color" value="#FFFFFF"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="_parallax-border-radius" class="range-container">
+                        <div class="mini-title"> Escolha o formato dos componentes que tiverem background </div>
+                        <div class="range-grid-1">
+                            <div class="container mr-tp-10">
+                                <div class="mini-subtitle">canto superior esquerdo</div>
+                                <div class="content">
+                                    <div class="range"><input id="parallax-border-radius-top-left" type="range" value="0" min="0" max="100"></div>
+                                    <div class="range-result"><span id="parallax-border-radius-top-left-result">0</span></div>
+                                </div>
+                            </div>
+                            <div class="container mr-tp-25">
+                                <div class="mini-subtitle">canto superior direito</div>
+                                <div class="content">
+                                    <div class="range"><input id="parallax-border-radius-top-right" type="range" value="0" min="0" max="100"></div>
+                                    <div class="range-result"><span id="parallax-border-radius-top-right-result">0</span></div>
+                                </div>
+                            </div>
+                            <div class="container mr-tp-25">
+                                <div class="mini-subtitle">canto inferior direito</div>
+                                <div class="content">
+                                    <div class="range"><input id="parallax-border-radius-bottom-right" type="range" value="0" min="0" max="100"></div>
+                                    <div class="range-result"><span id="parallax-border-radius-bottom-right-result">0</span></div>
+                                </div>
+                            </div>
+                            <div class="container mr-tp-25">
+                                <div class="mini-subtitle">canto inferior esquerdo</div>
+                                <div class="content">
+                                    <div class="range"><input id="parallax-border-radius-bottom-left" type="range" value="0" min="0" max="100"></div>
+                                    <div class="range-result"><span id="parallax-border-radius-bottom-left-result">0</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="_opacity" class="range-container">
+                        <div class="mini-title"> Escolha o nível de opacidade dos componentes que tiverem background </div>
+                        <div class="range-grid-1">
+                            <div class="container">
+                                <div class="mini-subtitle">nível de opacidade</div>
+                                <div class="content">
+                                    <div class="range"><input id="opacity" type="range" value="90" min="0" max="100"></div>
+                                    <div class="range-result"><span id="opacity-result">90</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="_background" class="image-container">
+                        <div class="mini-title"> Escolha uma imagem de background </div>
+                        <div class="container">
+                            <div class="background-panel" id="background-photo"><img src="background.jpg" alt=""></div>
+                        </div>
+                        <div class="image-grid">
+                            <div class="button">
+                                <div onclick="Background()" class="add" id="add-background">
+                                    <div class="fill"><div class="text">Adicionar</div></div>
+                                    <input type="file" id="background" hidden> 
+                                </div>
+                            </div>
+                            <div class="button">
+                                <div class="remove" id="remove-background">
+                                    <div class="fill"><div class="text">Remover</div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar-container">
+            <div class="nav-bar">
+                <div class="bars-container">
+                    <label for="links-panel"><div class="bars"></div></label>
+                </div>
+                <div class="logo-container">
+                    <a href="#"><img src="assets/images/logos/logo-white.png" alt=""></a>
+                </div>
+                <input type="checkbox" id="links-panel">
+                <div class="links-container">
+                    <div class="close-panel"><label for="links-panel"></label></div>
+                    <div class="links-content">
+                        <div class="content">
+                            <div class="link-logo">
+                                <img src="assets/images/logos/logo-white.png" alt="">
+                                <label for="links-panel"></label>
+                            </div>
+                            <input type="checkbox" id="link-1">
+                            <div class="item">
+                                <label class="dropdown-disabled" for="link-1">
+                                    <a href="#"><div class="text">início</div></a>
+                                </label>
+                            </div>
+                            <input type="checkbox" id="link-2">
+                            <div class="item">
+                                <label class="dropdown-active" for="link-2">
+                                    <a><div class="text">camisetas</div><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                                </label>
+                                <div class="dropdown-container">
+                                    <div class="dropdown-content">
+                                        <div class="drop-down">
+                                            <a href="#"><div class="content"><div class="text"> Regata </div></div></a>
+                                            <a href="#"><div class="content"><div class="text"> Manga curta </div></div></a>
+                                            <a href="#"><div class="content"><div class="text"> Todos </div></div></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="checkbox" id="link-3">
+                            <div class="item">
+                                <label class="dropdown-active" for="link-3">
+                                    <a><div class="text">Shorts</div><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                                </label>
+                                <div class="dropdown-container">
+                                    <div class="dropdown-content">
+                                        <div class="drop-down">
+                                            <a href="#"><div class="content"><div class="text"> Bermudas </div></div></a>
+                                            <a href="#"><div class="content"><div class="text"> Jeans </div></div></a>
+                                            <a href="#"><div class="content"><div class="text"> short de tactel </div></div></a>
+                                            <a href="#"><div class="content"><div class="text"> Todos </div></div></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="checkbox" id="link-4">
+                            <div class="item">
+                                <label class="dropdown-active" for="link-4">
+                                    <a><div class="text">Acessórios</div><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                                </label>
+                                <div class="dropdown-container">
+                                    <div class="dropdown-content">
+                                        <div class="drop-down">
+                                            <a href="#"><div class="content"><div class="text"> Bonés </div></div></a>
+                                            <a href="#"><div class="content"><div class="text"> Carteiras </div></div></a>
+                                            <a href="#"><div class="content"><div class="text"> Todos </div></div></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="checkbox" id="link-5">
+                            <div class="item">
+                                <label class="dropdown-active" for="link-5">
+                                    <a><div class="text">Blusas</div><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                                </label>
+                                <div class="dropdown-container">
+                                    <div class="dropdown-content">
+                                        <div class="drop-down">
+                                            <a href="#"><div class="content"><div class="text"> Blusas </div></div></a>
+                                            <a href="#"><div class="content"><div class="text"> Corta vento </div></div></a>
+                                            <a href="#"><div class="content"><div class="text"> Jaquetas </div></div></a>
+                                            <a href="#"><div class="content"><div class="text"> Todos </div></div></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="checkbox" id="link-6">
+                            <div class="item">
+                                <label class="dropdown-active" for="link-6">
+                                    <a><div class="text">Kits</div><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                                </label>
+                                <div class="dropdown-container">
+                                    <div class="dropdown-content">
+                                        <div class="drop-down">
+                                            <a href="#"><div class="content"><div class="text"> Kit com 3 </div></div></a>
+                                            <a href="#"><div class="content"><div class="text"> Kit com 4 </div></div></a>
+                                            <a href="#"><div class="content"><div class="text"> Kit com 5 </div></div></a>
+                                            <a href="#"><div class="content"><div class="text"> Kit com 6 </div></div></a>
+                                            <a href="#"><div class="content"><div class="text"> Todos </div></div></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="research-container">
+                    <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-container mr-tp-40">
+            <div class="image-container">
+                <div id="photo_1"><img src="assets/images/assets/800X800.jpg" alt=""></div>
+                <div id="photo_2"><img src="assets/images/assets/800X800.jpg" alt=""></div>
+                <div id="photo_3"><img src="assets/images/assets/800X800.jpg" alt=""></div>
+                <div id="photo_4"><img src="assets/images/assets/800X800.jpg" alt=""></div>
+                <div id="photo_5"><img src="assets/images/assets/800X800.jpg" alt=""></div>
+                <div id="photo_6"><img src="assets/images/assets/800X800.jpg" alt=""></div>
+                <div id="photo_7"><img src="assets/images/assets/800X800.jpg" alt=""></div>
+                <div id="photo_8"><img src="assets/images/assets/800X800.jpg" alt=""></div>
+                <div id="photo_9"><img src="assets/images/assets/800X800.jpg" alt=""> </div>
+                <div id="photo_10"><img src="assets/images/assets/800X800.jpg" alt=""></div>
+                <div id="photo_11"><img src="assets/images/assets/800X800.jpg" alt=""></div>
+                <div id="photo_12"><img src="assets/images/assets/800X800.jpg" alt=""></div>
+            </div>
+            <div class="gallery-container">
+                <div class="photo-container">
+                    <div class="photo" id="photo_selection_1">
+                        <img src="assets/images/assets/800X800.jpg" alt="">
+                    </div>
+                </div>
+                <div class="photo-container">
+                    <div class="photo" id="photo_selection_2">
+                        <img src="assets/images/assets/800X800.jpg" alt="">
+                    </div>
+                </div>
+                <div class="photo-container">
+                    <div class="photo" id="photo_selection_3">
+                        <img src="assets/images/assets/800X800.jpg" alt="">
+                    </div>
+                </div>
+                <div class="photo-container">
+                    <div class="photo" id="photo_selection_4">
+                        <img src="assets/images/assets/800X800.jpg" alt="">
+                    </div>
+                </div>
+                <div class="photo-container">
+                    <div class="photo" id="photo_selection_5">
+                        <img src="assets/images/assets/800X800.jpg" alt="">
+                    </div>
+                </div>
+                <div class="photo-container">
+                    <div class="photo" id="photo_selection_6">
+                        <img src="assets/images/assets/800X800.jpg" alt="">
+                    </div>
+                </div>
+                <div class="photo-container">
+                    <div class="photo" id="photo_selection_7">
+                        <img src="assets/images/assets/800X800.jpg" alt="">
+                    </div>
+                </div>
+                <div class="photo-container">
+                    <div class="photo" id="photo_selection_8">
+                        <img src="assets/images/assets/800X800.jpg" alt="">
+                    </div>
+                </div>
+                <div class="photo-container">
+                    <div class="photo" id="photo_selection_9">
+                        <img src="assets/images/assets/800X800.jpg" alt="">
+                    </div>
+                </div>
+                <div class="photo-container">
+                    <div class="photo" id="photo_selection_10">
+                        <img src="assets/images/assets/800X800.jpg" alt="">
+                    </div>
+                </div>
+                <div class="photo-container">
+                    <div class="photo" id="photo_selection_11">
+                        <img src="assets/images/assets/800X800.jpg" alt="">
+                    </div>
+                </div>
+                <div class="photo-container">
+                    <div class="photo" id="photo_selection_12">
+                        <img src="assets/images/assets/800X800.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="informations-container">
+                <div class="informations">
+                    <div class="name-container">
+                        <div class="product-name">Camiseta da lascoste 100% algodão com logo em relevo</div>
+                        <div class="price"><div class="type-coin">R</div><div class="coin">$</div><div class="value">00.00</div></div>
+                    </div>
+                    <div class="size-container">
+                        <div class="title mr-tp-20">Tamanhos disponiveis</div>
+                        <div class="sizes mr-tp-5">
+                            <div class="size-content">
+                                <div class="content">
+                                    <div class="fill"><div class="text"> P </div></div>
+                                </div>
+                            </div>
+                            <div class="size-content">
+                                <div class="content">
+                                    <div class="fill"><div class="text"> M </div></div>
+                                </div>
+                            </div>
+                            <div class="size-content">
+                                <div class="content">
+                                    <div class="fill"><div class="text"> G </div></div>
+                                </div>
+                            </div>
+                            <div class="size-content">
+                                <div class="content">
+                                    <div class="fill"><div class="text"> GG </div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="color-container">
+                        <div class="title mr-tp-25">Cores disponiveis</div>
+                        <div class="colors mr-tp-5">
+                            <div class="color-content">
+                                <div class="content">
+                                    <div class="fill"><div class="text"> Preto </div></div>
+                                </div>
+                            </div>
+                            <div class="color-content">
+                                <div class="content">
+                                    <div class="fill"><div class="text"> Branco </div></div>
+                                </div>
+                            </div>
+                            <div class="color-content">
+                                <div class="content">
+                                    <div class="fill"><div class="text"> Cinza </div></div>
+                                </div>
+                            </div>
+                            <div class="color-content">
+                                <div class="content">
+                                    <div class="fill"><div class="text"> Vermelho </div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="purchase-container">
+                        <div class="title mr-tp-25">Escolha na onde comprar</div>
+                        <div class="purchase mr-tp-5">
+                            <div class="d-flex justify-content-center">
+                                <a href="#" target="_blank"><img src="assets/images/e-commerce/shopee.jpg" alt=""></a>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" target="_blank"><img src="assets/images/e-commerce/amazon.jpg" alt=""></a>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" target="_blank"><img src="assets/images/e-commerce/mercado-livre.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="mr-tp-40 mr-bt-25">
+        
+        <div class="information-title"> Informações </div>
+        <div class="information-resume mr-tp-10">
+            O básico nunca sai de moda e pensando nisso desenvolvemos nossa linha de camisetas básicas com tecidos de qualidade e com preço justo.
+            Nossas camisetas oferecem uma ótima opção para uso casual e são bases para compor muitos looks modernos. Nossa camiseta é um item obrigatório no seu guarda-roupa.
+        </div>
+        <div class="information-resume mr-tp-5">
+            Temos orgulho de ser uma das marcas que mais cresce no Brasil, 100% brasileira, líder no mercado online que está sempre procurando inovação para os nossos clientes.
+        </div>
+        <div class="indicator-container mr-tp-45 mr-lf-25">
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            <h1>CAMISETA MASCULINA:</h1>
+        </div>
+        <h1 class="mr-lf-35 mr-tp-10">Tamanho P</h1>
+        <h1 class="mr-lf-35">66cm COMPRIMENTO x 50cm LARGURA</h1>
+
+        <h1 class="mr-lf-35 mr-tp-25">Tamanho M</h1>
+        <h1 class="mr-lf-35">70cm COMPRIMENTO x 52cm LARGURA</h1>
+
+        <h1 class="mr-lf-35 mr-tp-25">Tamanho G</h1>
+        <h1 class="mr-lf-35">74cm COMPRIMENTO x 56cm LARGURA</h1>
+
+        <h1 class="mr-lf-35 mr-tp-25">Tamanho GG</h1>
+        <h1 class="mr-lf-35">76cm COMPRIMENTO x 58cm LARGURA</h1>
+
+        <hr class="mr-tp-30">
+
+        <div class="text-container mr-tp-25">
+            <div class="container-left">
+                <div class="big-bar"></div>
+            </div>
+            <div class="title-container">
+                <div class="big-title">Veja mais produtos relacionados</div>
+                <div class="middle-title"></div>
+                <div class="small-title"></div>
+            </div>
+            <div class="container-right">
+                <div class="big-bar"></div>
+            </div>
+        </div>
+
+        <div class="card-grid">
+            <div class="card">
+                <a href="#">
+                    <div class="shadow"></div>
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="assets/images/assets/800X800.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="price">
+                                <div class="type-coin">R</div><div class="coin">$</div><div class="value">00.00</div>
+                            </div>
+                            <p>We attract your potential buyers from search</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <div class="shadow"></div>
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="assets/images/assets/800X800.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="price">
+                                <div class="type-coin">R</div><div class="coin">$</div><div class="value">00.00</div>
+                            </div>
+                            <p>We attract your potential buyers from search</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <div class="shadow"></div>
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="assets/images/assets/800X800.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="price">
+                                <div class="type-coin">R</div><div class="coin">$</div><div class="value">00.00</div>
+                            </div>
+                            <p>We attract your potential buyers from search</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <div class="shadow"></div>
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="assets/images/assets/800X800.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="price">
+                                <div class="type-coin">R</div><div class="coin">$</div><div class="value">00.00</div>
+                            </div>
+                            <p>We attract your potential buyers from search</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <div class="shadow"></div>
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="assets/images/assets/800X800.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="price">
+                                <div class="type-coin">R</div><div class="coin">$</div><div class="value">00.00</div>
+                            </div>
+                            <p>We attract your potential buyers from search</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <div class="shadow"></div>
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="assets/images/assets/800X800.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="price">
+                                <div class="type-coin">R</div><div class="coin">$</div><div class="value">00.00</div>
+                            </div>
+                            <p>We attract your potential buyers from search</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="card-grid">
+            <div class="card">
+                <a href="#">
+                    <div class="shadow"></div>
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="assets/images/assets/800X800.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="price">
+                                <div class="type-coin">R</div><div class="coin">$</div><div class="value">00.00</div>
+                            </div>
+                            <p>We attract your potential buyers from search</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <div class="shadow"></div>
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="assets/images/assets/800X800.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="price">
+                                <div class="type-coin">R</div><div class="coin">$</div><div class="value">00.00</div>
+                            </div>
+                            <p>We attract your potential buyers from search</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <div class="shadow"></div>
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="assets/images/assets/800X800.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="price">
+                                <div class="type-coin">R</div><div class="coin">$</div><div class="value">00.00</div>
+                            </div>
+                            <p>We attract your potential buyers from search</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <div class="shadow"></div>
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="assets/images/assets/800X800.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="price">
+                                <div class="type-coin">R</div><div class="coin">$</div><div class="value">00.00</div>
+                            </div>
+                            <p>We attract your potential buyers from search</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <div class="shadow"></div>
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="assets/images/assets/800X800.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="price">
+                                <div class="type-coin">R</div><div class="coin">$</div><div class="value">00.00</div>
+                            </div>
+                            <p>We attract your potential buyers from search</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <div class="shadow"></div>
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="assets/images/assets/800X800.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="price">
+                                <div class="type-coin">R</div><div class="coin">$</div><div class="value">00.00</div>
+                            </div>
+                            <p>We attract your potential buyers from search</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="text-container mr-tp-10">
+            <div class="container-left">
+                <div class="small-bar"></div>
+            </div>
+            <div class="title-container">
+                <div class="small-title">Outros produtos interessantes</div>
+            </div>
+            <div class="container-right">
+                <div class="small-bar"></div>
+            </div>
+        </div>
+
+        <div class="card-grid">
+            <div class="card">
+                <a href="#">
+                    <div class="shadow"></div>
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="assets/images/assets/800X800.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="price">
+                                <div class="type-coin">R</div><div class="coin">$</div><div class="value">00.00</div>
+                            </div>
+                            <p>We attract your potential buyers from search</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <div class="shadow"></div>
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="assets/images/assets/800X800.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="price">
+                                <div class="type-coin">R</div><div class="coin">$</div><div class="value">00.00</div>
+                            </div>
+                            <p>We attract your potential buyers from search</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <div class="shadow"></div>
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="assets/images/assets/800X800.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="price">
+                                <div class="type-coin">R</div><div class="coin">$</div><div class="value">00.00</div>
+                            </div>
+                            <p>We attract your potential buyers from search</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <div class="shadow"></div>
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="assets/images/assets/800X800.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="price">
+                                <div class="type-coin">R</div><div class="coin">$</div><div class="value">00.00</div>
+                            </div>
+                            <p>We attract your potential buyers from search</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <div class="shadow"></div>
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="assets/images/assets/800X800.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="price">
+                                <div class="type-coin">R</div><div class="coin">$</div><div class="value">00.00</div>
+                            </div>
+                            <p>We attract your potential buyers from search</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <div class="shadow"></div>
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="assets/images/assets/800X800.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="price">
+                                <div class="type-coin">R</div><div class="coin">$</div><div class="value">00.00</div>
+                            </div>
+                            <p>We attract your potential buyers from search</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="card-grid">
+            <div class="card">
+                <a href="#">
+                    <div class="shadow"></div>
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="assets/images/assets/800X800.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="price">
+                                <div class="type-coin">R</div><div class="coin">$</div><div class="value">00.00</div>
+                            </div>
+                            <p>We attract your potential buyers from search</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <div class="shadow"></div>
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="assets/images/assets/800X800.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="price">
+                                <div class="type-coin">R</div><div class="coin">$</div><div class="value">00.00</div>
+                            </div>
+                            <p>We attract your potential buyers from search</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <div class="shadow"></div>
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="assets/images/assets/800X800.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="price">
+                                <div class="type-coin">R</div><div class="coin">$</div><div class="value">00.00</div>
+                            </div>
+                            <p>We attract your potential buyers from search</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <div class="shadow"></div>
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="assets/images/assets/800X800.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="price">
+                                <div class="type-coin">R</div><div class="coin">$</div><div class="value">00.00</div>
+                            </div>
+                            <p>We attract your potential buyers from search</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <div class="shadow"></div>
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="assets/images/assets/800X800.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="price">
+                                <div class="type-coin">R</div><div class="coin">$</div><div class="value">00.00</div>
+                            </div>
+                            <p>We attract your potential buyers from search</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <div class="shadow"></div>
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="assets/images/assets/800X800.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="price">
+                                <div class="type-coin">R</div><div class="coin">$</div><div class="value">00.00</div>
+                            </div>
+                            <p>We attract your potential buyers from search</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="contacts-container mr-tp-20">
+            <div class="contact">
+                <div class="content">
+                    <div class="icon-container">
+                        <i class="fa fa-map-signs" aria-hidden="true"></i>
+                    </div>
+                    <div class="information-container">
+                        <div class="info-1">street BangStore,0000</div>
+                        <div class="info-2">Aparecida - SÃO PAULO</div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="content">
+                    <div class="icon-container">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <div class="information-container">
+                        <div class="info-1">(00) 0000-0000</div>
+                        <div class="info-2">00:00 - 00:00</div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="content">
+                    <div class="icon-container">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+                    <div class="information-container">
+                        <div class="info-1">BangStore@BangStore.com</div>
+                        <div class="info-2">Segunda a Sexta</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="final-page">
+            <div class="content">
+                <div class="img-container"><img src="assets/images/logos/logo-white.png" alt=""></div>
+                <p>Veja mais links úteis</p>
+                <div class="links-container">
+                    <div class="links">
+                        <div class="link">
+                            <a href="#"><div class="text">Blusas</div></a>
+                        </div>
+                        <div class="link">
+                            <a href="#"><div class="text">Bermudas</div></a>
+                        </div>
+                        <div class="link">
+                            <a href="#"><div class="text">Camisetas</div></a>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <div class="link">
+                            <a href="#"><div class="text">Bonés</div></a>
+                        </div>
+                        <div class="link">
+                            <a href="#"><div class="text">Carteiras</div></a>
+                        </div>
+                        <div class="link">
+                            <a href="#"><div class="text">Bermudas Jeans</div></a>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <div class="link">
+                            <a href="#"><div class="text">Regatas</div></a>
+                        </div>
+                        <div class="link">
+                            <a href="#"><div class="text">Jaquetas</div></a>
+                        </div>
+                        <div class="link">
+                            <a href="#"><div class="text">Shorts Tactel</div></a>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <div class="link">
+                            <a href="#"><div class="text">Nike</div></a>
+                        </div>
+                        <div class="link">
+                            <a href="#"><div class="text">Adidas</div></a>
+                        </div>
+                        <div class="link">
+                            <a href="#"><div class="text">Oakley</div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="social-container">
+                <p>Siga-nos</p>
+                <div class="d-flex justify-content-center">
+                    <div class="content">
+                        <div class="follow">
+                            <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="follow">
+                            <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="follow">
+                            <a href="#" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="follow">
+                            <a href="#" target="_blank"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="follow">
+                            <a href="#" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="follow">
+                            <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bar"></div>
+            <div class="company">
+                <div class="intro">&copy; 2022 BANGSTORE. Todos direitos reservados.</div>
+                <a href="#" target="_blank">BANGSTORE&reg;</a>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="assets/js/preloader.js"></script>
+
+        <script type="text/javascript" src="assets/js/cards.js"></script>
+
+        <script type="text/javascript" src="assets/js/product-panel.js"></script>
+
+        <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+        
+        <script type="text/javascript" src="assets/js/popper.min.js"></script>
+
+        <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="assets/edit-panel/product-panel.js"></script>
+
+    </body>
+
+</html>
+
